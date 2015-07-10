@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DoctorInfo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="new_profile">+</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="title_activity_doctor_details">DoctorDetails</string>
+    <string name="title_activity_add_doctor">AddDoctor</string>
+    <string name="title_activity_edit">EditActivity</string>
+    <string name="title_activity_delete">DeleteActivity</string>
+
+</resources>

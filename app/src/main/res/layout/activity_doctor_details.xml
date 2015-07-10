@@ -1,0 +1,269 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="600dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="vertical"
+            android:background="#ffbdbd"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:text="Details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_below="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:orientation="horizontal"
+            android:background="@color/background_floating_material_light"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Doctor Information"
+            android:layout_marginTop="10dp"
+            android:id="@+id/textView"
+            android:layout_below="@+id/line1"
+            android:layout_centerHorizontal="true" />
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_below="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="horizontal"
+            android:background="@color/switch_thumb_normal_material_dark"/>
+
+        <TableLayout
+            android:id="@+id/tlInfo"
+            android:layout_below="@id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:padding="5dip">
+                <TextView
+                    android:text="Name :"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="8dp"
+                    android:textSize="18sp"
+                    android:hint=""
+                    android:layout_height="wrap_content"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:padding="5dip">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Designation : "
+                    android:textSize="20sp"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:id="@+id/tvDesignation"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="8dp"
+                    android:textSize="18sp"
+                    android:hint=""
+                    android:layout_height="wrap_content"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:padding="5dip">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Details : "
+                    android:textSize="20sp"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:id="@+id/tvDetails"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="8dp"
+                    android:textSize="18sp"
+                    android:hint=""
+                    android:layout_height="wrap_content"/>
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:padding="5dip">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile : "
+                    android:textSize="20sp"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:id="@+id/tvMobile"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="8dp"
+                    android:textSize="18sp"
+                    android:hint=""
+                    android:layout_height="wrap_content"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:padding="5dip">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Email : "
+                    android:textSize="20sp"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="8dp"
+                    android:textSize="18sp"
+                    android:hint=""
+                    android:layout_height="wrap_content"/>
+            </TableRow>
+
+
+        </TableLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Weekly Schedule"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/tlInfo"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginTop="32dp" />
+
+
+        <TableLayout
+            android:id="@+id/tlSchedule"
+            android:layout_below="@id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:padding="5dip">
+                <TextView
+                    android:text="Working Place :"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:id="@+id/tvPlace"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="8dp"
+                    android:textSize="18sp"
+                    android:hint=""
+                    android:layout_height="wrap_content"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:padding="5dip">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Time : "
+                    android:textSize="20sp"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="8dp"
+                    android:textSize="18sp"
+                    android:hint=""
+                    android:layout_height="wrap_content"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:padding="5dip">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Day: "
+                    android:textSize="20sp"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:id="@+id/tvDay"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="8dp"
+                    android:textSize="18sp"
+                    android:hint=""
+                    android:layout_height="wrap_content"/>
+            </TableRow>
+
+
+        </TableLayout>
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>
